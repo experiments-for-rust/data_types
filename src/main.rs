@@ -13,17 +13,21 @@ fn main() {
     let f:bool = false;
     let a="a";
     let b:char = 65 as char; //cast between types
+    println!(
+        "{},{},{},{},{},{},{},{},{},{}", 
+        INT1,INT2,INT3,FLOAT1,FLOAT2,x,t,f,a,b
+    );
 
     //compound data types
     let touple:(i32,i64,i128)=(114514,19198110,893931);
     let (c,d,e)=touple; //assigned in group
-    let f=touple.0; //the value of the first element in touple is assigned to variable f
+    let g=touple.0; //the value of the first element in touple is assigned to variable f
     let array1:[i32;5]=[1,2,3,4,5];
     let array2=[3;5]; //[3,3,3,3,3]
 
     println!(
-        "{},{},{},{},{},{},{},{},{},{},{},{},{}", 
-        INT1,INT2,INT3,FLOAT1,FLOAT2,x,t,f,a,b,c,d,e
+        "{},{},{},{}", 
+        c,d,e,g
     );
     for i in 0..5{
         println!("a[{}]={}",i,array1[i]);
