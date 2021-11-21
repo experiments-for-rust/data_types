@@ -30,14 +30,14 @@ fn main() {
         c,d,e,g
     );
     for i in 0..5{
-        println!("a[{}]={}",i,array1[i]);
+        println!("array1[{}]={}",i,array1[i]);
     }
     for i in array2.iter(){
-        println!("directly print the value of array a[]: {}",i);
+        println!("directly print the value of array array2[]: {}",i);
     }
 
     //invalid visit of array
-    print!("enter an array index for a[]: ");
+    print!("enter an array index for array1[]: ");
     io::stdout().flush().unwrap(); //flush stdout when using print!()
     let mut index = String::new();
     io::stdin().read_line(&mut index)
