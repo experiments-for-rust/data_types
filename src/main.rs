@@ -45,7 +45,7 @@ fn main() {
 
     let index:usize=index.trim() //remove leading and trailing whitespaces
         .parse().expect("index entered was not a number");
-    let element = array1[index];
+    let element = array1[index]; //CANNOT use isize for index
     println!(
         "value of the element at index {}: {}",
         index,element
